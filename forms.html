@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--Title of html forms-->
+		<title>Forms</title>
+		<!--link css file to html file-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+		<body>
+			<!--create div id for container-->
+			<div id ="form_container">			
+				<div class="p1">
+					<!--create legend with fieldset-->
+					<fieldset id="f1">
+						<legend><h4>Survey Form</h4></legend>
+						<p>
+							Please take a minute to answer this brief survey
+						</p>
+					</fieldset>
+				</div>
+				
+				<!--create forms-->
+				<form class="user_info" action="mailto:info@itb.ie" method="post"  oninput="x.value=parseInt(a.value)" autocomplete="on">
+					<!--create legend with fieldset-->
+					<fieldset id="f2">
+						<legend><h4>Your Information</h4></legend>
+							<p><!--create textfield-->
+								<label for="fname">First Name:</label>
+								<input type="text" name="first_name" id="fname" required placeholder="Enter Fisrt Name here" size="20" maxlength="30" autofocus  />
+							</p>	
+							
+							<p>
+								<label for="lname">Last Name:</label>
+								<input type="text" name="last_name" id="lname" required placeholder="Enter Last Name here" size="20" maxlength="30"/>
+							</p>
+							
+							<p>
+								<label for="dbirth">Date of Birth:</label>
+								<input type="date" name="birthday" id="dbirth" min="1920-01-01" max="2018-12-31" size="20" autocomplete="off"/>
+							</p>
+							
+							<p>
+								<label for="tel">Mobile number</label>
+								<input type="tel" name="tel" id="tel" size="20" pattern="^\d{10}$" required title="Mobile Number (Format:9999999999)" placeholder="Enter mobile number" autocomplete="off">
+							</p>
+							
+							<p>							
+								<span class="radioh">Male</span>
+								<input type="radio" name="gender" id="male" value="male" required>
+								<span class="radioh">Female</span>
+								<input type="radio" name="gender" id="female" value="female" required>							
+							</p>
+					</fieldset>
+					
+					<!--create legend with fieldset-->
+					<fieldset id="f3">
+						<legend><h4>Enter Email Address</h4></legend>
+							<p>
+								<label for="email">Email Address</label>
+								<input type="email" name="Email" id="email" required placeholder="Sample@yahoo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" size="20" maxlength="30" autocomplete="off"/>
+							</p>
+							<p>
+								<label for="pass">Password:</label>
+								<input type="password" name="password" id="pass" required placeholder="Type password here" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+								title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" size="20" maxlength="30"/>
+							</p>
+					</fieldset>
+				
+					<!--create legend with fieldset-->
+					<fieldset id="f4">
+						<legend><h4>Would you like to be added to our mailing list</h4></legend>
+						<p><!-- create check box form-->
+							<input type="checkbox" name="yes" value="on" checked="checked">
+							<span class="check">yes</span>
+							<input type="checkbox" name="no" value="on">
+							<span class="check">No</span>
+						</P>
+					</fieldset>
+					
+					<!--create legend with fieldset-->
+					<fieldset id="f5">
+					<!--create a dropdown menu with multiple selection-->
+					<!--note hold down ctrl button to make a multipleselection-->
+						<legend><h4>contact us</h4></legend>
+							<select name="dropdown" size="2" id="search" multiple>
+								<option value="email" selected>Email</option>
+								<option value="post">Post</option>
+								<option value="phone">Phone</option>
+								<option value="facebook">Facebook</option>
+							</select>					
+					</fieldset>
+					
+						<!--create legend with fieldset-->
+					<fieldset id="f6">							
+						<legend><h4>How did you hear about us?</h4></legend>
+							<p>	<!--create radio button-->			
+								
+								<input type="radio" name="search" id="internet" value="internet" required>
+								<span class="radioh">Internet</span>							
+								<input type="radio" name="search" id="mgazine" value="magazine" required>
+								<span class="radioh">Magazine</span>	
+								<input type="radio" name="search" id="other" value="other" required>
+								<span class="radioh">other</span>						
+							</p>							
+					</fieldset>
+					
+					<fieldset id="f7">							
+						<legend><h4>Rate my Website</h4></legend>
+							<p>	<!--create radio button-->			
+								<input type="range" name="a" id="range" value="1"  min="1" max="10">
+								<output name="x"></output>						
+							</p>							
+					</fieldset>
+					<!--create text area-->
+						<div class="comments">
+							Comments:	
+						</div>	
+					<p>
+						<textarea rows="10" cols="50" name="comments_area" class="textarea" placeholder="Enter your comments here...."></textarea>
+					</p>
+					<div id="button">
+						<p><!--create submit button-->
+							<input type="reset" name="reset" id="reset" value="Clear"><br>
+							<input type="submit" name="submit"  id="submit" value="Submit">						
+						</p><!--end forms-->
+					</div>
+				</form>
+				<a href="index.html">Back to home page</a>
+			</div>
+			
+		</body>
+</html>
