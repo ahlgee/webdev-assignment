@@ -150,3 +150,111 @@ a:hover {
 .dropdown:hover .dropbtn {
     background-color: #b3003b;
 }
+
+/*styling for forms*/
+#form_container {
+	width: 500px;	
+	background-color: #99ddff;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/*styling fieldset*/
+fieldset{
+border: 0.050em solid black;
+width: 25em;
+background-color: #b31aff;
+clear: both;
+padding-bottom: 1em;
+margin: 2em;
+border-radius: 20px;
+margin-top: 0.5em;
+}
+/*styling legend*/
+legend{
+	border: 0.050em solid black;
+	background-color: #ffffb3;
+	color: black;
+	padding: 1px 8px;
+	margin: 1em;
+	border-radius: 20px;
+}
+/*styling label*/
+label {
+	width: 120px;
+	color: black;
+	float: left;
+	display: block;
+	border-radius: 4px;
+}
+/*styling input*/
+input{
+	color: black;
+	background-color: #66ff66;
+	border: 0.1em solid #999999
+}
+/*styling select*/
+select{
+	background-color:#e6b3b3 ;
+	border-radius: 4px;
+}
+/*styling textarea*/
+textarea{
+	width: 250px;
+	height: 150px;
+	margin-left: 2em;
+	color: black;
+	background-color: #1a75ff;
+	border-radius: 5px;
+}
+.comments{
+	margin-left: 2em;
+	color: black;
+}
+/*styling submit button*/
+#submit{
+	font-family: verdana;
+	font-size: 0.8em;
+	padding: 0.1em;
+	background-color: #c65353;
+	color: black;
+	border: 2px outset black;
+	width: 8em;
+	margin-left: 2em;
+	border-radius: 50px;
+}
+/*styling reset button*/
+#reset{
+	font-family: verdana;
+	font-size: 0.8em;
+	padding: 0.1em;
+	background-color: #c65353;
+	color: black;
+	border: 2px outset black;
+	width: 8em;
+	margin-left: 2em;
+	margin-bottom: 0.5em;
+	border-radius: 50px;
+}
+/*styling radio button*/
+input[type="radio"]{
+	float: left;
+	margin-right: 5px;
+}
+.radioh{
+	float: left;
+	margin-right: 5px;
+	display: block;
+}
+/*styling checkbox*/
+input[type="checkbox"]{
+	float: left;
+	margin-right: 5px;
+}
+.check{
+	float: left;
+	margin-right: 5px;
+}
