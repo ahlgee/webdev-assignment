@@ -1,0 +1,260 @@
+/*Css code for web developtment assignment*/
+
+html {
+	margin: 0px;
+	padding: 0px;
+}
+/* font family of whole web site*/
+* {
+    font-family: Arial, Arial, sans-serif;
+}
+/* align h1 to center and change text color to white*/
+h1{
+text-align: center;
+color: white;
+}
+/* h2 and h3 text color to white and margin*/
+h2, h3 {
+	color: white;
+	margin: 15px 0px;
+}
+/* size of container bg color and margin*/
+#container {
+	width: 1000px;	
+	background-color:#006699;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*body bg color*/
+body{
+	background-color: #e1e1ea;
+}
+/*header bg color, heigt and margin*/
+header {
+	background-color:  #ffb84d;
+	height: 100px;
+	margin: 0px;
+}
+/* main align to the left with padding*/
+main {
+	padding: 25px;
+text-align: left;
+}
+/* class legend align to center*/
+.legend{
+text-align: center;
+}
+/*footer style*/
+footer {
+	background-color: black;	
+	font-size: small;
+	font-style: italic;
+	padding: 10px 20px;
+	color: white;
+	clear: both;
+	width: 960px;
+	bottom: 10px;
+}
+/*logo position and style*/
+#logo {
+	width: 200px;
+	height: 65px;
+	margin: 0px;
+	border: 0px;
+	padding: 10px;
+	float: left;
+}
+/*images position, height and style*/
+#images{
+	float: right;
+	
+	height: 300px;
+	padding: 5px 10px 150px 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border: 1px;
+}
+/*ul style*/
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+/*li position and display*/
+li.pages {
+	float: left;
+	display: inline;
+}
+/*li a style*/
+li a {
+	text-decoration: none;
+	display: block;
+	width: 130px;
+	margin: 26px 20px;
+	padding: 10px;	
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	border: 2px black;
+	border-radius: 30px;
+}
+/* a decoration and color*/
+a{
+text-decoration: none;
+color: white;
+}
+/* color of "a" when you hover the mouse*/
+a:hover {
+	color: black;
+	background-color: white;
+}
+/*current page color and bg color*/
+.current_page {
+	color: white;
+	background-color: #006699;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 0px;
+    text-decoration: none;
+    display: block;
+	font-size: small;
+	
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+	background-color: #b3003b;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #b3003b;
+}
+
+/*styling for forms*/
+#form_container {
+	width: 500px;	
+	background-color: #99ddff;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/*styling fieldset*/
+fieldset{
+border: 0.050em solid black;
+width: 25em;
+background-color: #b31aff;
+clear: both;
+padding-bottom: 1em;
+margin: 2em;
+border-radius: 20px;
+margin-top: 0.5em;
+}
+/*styling legend*/
+legend{
+	border: 0.050em solid black;
+	background-color: #ffffb3;
+	color: black;
+	padding: 1px 8px;
+	margin: 1em;
+	border-radius: 20px;
+}
+/*styling label*/
+label {
+	width: 120px;
+	color: black;
+	float: left;
+	display: block;
+	border-radius: 4px;
+}
+/*styling input*/
+input{
+	color: black;
+	background-color: #66ff66;
+	border: 0.1em solid #999999
+}
+/*styling select*/
+select{
+	background-color:#e6b3b3 ;
+	border-radius: 4px;
+}
+/*styling textarea*/
+textarea{
+	width: 250px;
+	height: 150px;
+	margin-left: 2em;
+	color: black;
+	background-color: #1a75ff;
+	border-radius: 5px;
+}
+.comments{
+	margin-left: 2em;
+	color: black;
+}
+/*styling submit button*/
+#submit{
+	font-family: verdana;
+	font-size: 0.8em;
+	padding: 0.1em;
+	background-color: #c65353;
+	color: black;
+	border: 2px outset black;
+	width: 8em;
+	margin-left: 2em;
+	border-radius: 50px;
+}
+/*styling reset button*/
+#reset{
+	font-family: verdana;
+	font-size: 0.8em;
+	padding: 0.1em;
+	background-color: #c65353;
+	color: black;
+	border: 2px outset black;
+	width: 8em;
+	margin-left: 2em;
+	margin-bottom: 0.5em;
+	border-radius: 50px;
+}
+/*styling radio button*/
+input[type="radio"]{
+	float: left;
+	margin-right: 5px;
+}
+.radioh{
+	float: left;
+	margin-right: 5px;
+	display: block;
+}
+/*styling checkbox*/
+input[type="checkbox"]{
+	float: left;
+	margin-right: 5px;
+}
+.check{
+	float: left;
+	margin-right: 5px;
+}
